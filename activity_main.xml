@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_building_clipart2"
+        android:padding="16dp"
+        tools:context="com.example.vishwasmittal.woc.MainActivity">
+
+        <Button
+            android:id="@+id/go_to_institute_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            android:background="#30555555"
+            android:onClick="goToInstituteDB"
+            android:padding="5dp"
+            android:text="Find out something about the campus" />
+
+        <Button
+            android:id="@+id/go_to_task_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/go_to_institute_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:background="#30555555"
+            android:onClick="goToTaskReminder"
+            android:padding="5dp"
+            android:text="Got something to do!!" />
+
+        <TextView
+            android:id="@+id/creditsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#30555555"
+            android:clickable="true"
+            android:onClick="creditsPressed"
+            android:padding="5dp"
+            android:text="Project under the aegis SDS Labs"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+</LinearLayout>

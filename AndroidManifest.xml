@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vishwasmittal.woc" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        android:name=".FirebaseAppConfig">
+        <activity android:name=".MainActivity"
+            android:label="WoC"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ToDoList"
+            android:label="TODO List"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FacultyInfo"
+            android:label="Know Your Surrounding"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainViewPager"
+            android:label="Know Your Surrounding"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CreateNewTask"
+            android:label="Know Your Surrounding"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DepartmentViewPager"
+            android:label="Know Your Surrounding"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminDepartmentViewPager"
+            android:label="Know Your Surrounding"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainBuildingPagerActivity"
+            android:label="Know Your Surrounding"
+            android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsLocationActivity"
+            android:label="@string/title_activity_maps_location"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
